@@ -12,8 +12,8 @@ import random
 
 MAX_HARD_NEGATIVES = 20000
 
-pos_img_dir = 'pos'
-neg_img_dir = 'sampneg'
+pos_img_dir = '/home/ubuntu/pedestrian-detection/pos'
+neg_img_dir = '/home/ubuntu/pedestrian-detection/sampneg'
 
 #cv2.imwrite("neg/"+str(pic_num)+".jpg",resized_image)
 
