@@ -47,11 +47,11 @@ def read_filenames():
             
 def create_pos_n_neg():
     for img in os.listdir(neg_img_dir):
-        line = 'pos'+'/'+img+'\n'
+        line = pos_img_dir+'/'+img+'\n'
         with open('bg.txt','a') as f:
             f.write(line)
     for img in os.listdir(pos_img_dir):
-        line = 'sempneg'+'/'+img+' 1 0 0 128 64' + '\n'
+        line = pos_img_dir+'/'+img+' 1 0 0 128 64' + '\n'
         with open('info.dat','a') as f:
             f.write(line)
 
