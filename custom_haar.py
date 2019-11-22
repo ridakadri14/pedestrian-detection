@@ -27,7 +27,6 @@ def crop_centre(img):
 #    cv2.imwrite(,resized_image)
     return crop
 
-
 def read_filenames():
 
     f_pos = []
@@ -44,8 +43,6 @@ def read_filenames():
         break
 
     return f_pos, f_neg
-
-
 
             
 def create_pos_n_neg():
