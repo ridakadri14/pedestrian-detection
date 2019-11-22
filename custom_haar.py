@@ -12,8 +12,8 @@ import random
 
 MAX_HARD_NEGATIVES = 20000
 
-pos_img_dir = 'D:\Rida\SVM\INRIAPerson\Train\pos'
-neg_img_dir = 'D:\Rida\SVM\INRIAPerson\Train\sampneg'
+pos_img_dir = 'pos'
+neg_img_dir = 'sampneg'
 
 #cv2.imwrite("neg/"+str(pic_num)+".jpg",resized_image)
 
@@ -50,11 +50,11 @@ def read_filenames():
             
 def create_pos_n_neg():
     for img in os.listdir(neg_img_dir):
-        line = 'D:\Rida\SVM\INRIAPerson\Train\sampneg'+'/'+img+'\n'
+        line = 'pos'+'/'+img+'\n'
         with open('bg.txt','a') as f:
             f.write(line)
     for img in os.listdir(pos_img_dir):
-        line = 'D:\Rida\SVM\INRIAPerson\Train\pos'+'/'+img+' 1 0 0 128 64' + '\n'
+        line = 'sempneg'+'/'+img+' 1 0 0 128 64' + '\n'
         with open('info.dat','a') as f:
             f.write(line)
 
