@@ -47,7 +47,7 @@ def read_filenames():
             
 def create_pos_n_neg():
     for img in os.listdir(neg_img_dir):
-        line = pos_img_dir+'/'+img+'\n'
+        line = neg_img_dir+'/'+img+'\n'
         with open('bg.txt','a') as f:
             f.write(line)
     for img in os.listdir(pos_img_dir):
