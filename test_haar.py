@@ -27,4 +27,8 @@ roi_color = img[y:y+h, x:x+w]
 
 cv2.imshow('img',img)
 k = cv2.waitKey(30)
+if k == 27:         # wait for ESC key to exit
+    cv2.destroyAllWindows()
+elif k == ord('s'): # wait for 's' key to save and exit
+    cv2.destroyAllWindows()
 cv2.destroyAllWindows()
