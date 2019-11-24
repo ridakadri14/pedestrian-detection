@@ -10,8 +10,8 @@ import cv2
 
 
 #this is the cascade we just made. Call what you want
-watch_cascade = cv2.CascadeClassifier('data\stage19.xml')
-orig = cv2.imread('sample_images\crop_000001.png')
+watch_cascade = cv2.CascadeClassifier('/home/ubuntu/pedestrian-detection/data\stage19.xml')
+orig = cv2.imread('/home/ubuntu/pedestrian-detection/sample_images\crop_000001.png')
 #img = orig.copy()
 gray = cv2.cvtColor(orig, cv2.COLOR_BGR2GRAY)
 
