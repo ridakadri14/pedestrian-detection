@@ -12,8 +12,8 @@ import cv2
 #this is the cascade we just made. Call what you want
 watch_cascade = cv2.CascadeClassifier('data\stage19.xml')
 orig = cv2.imread('sample_images\crop_000001.png')
-img = orig.copy()
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#img = orig.copy()
+gray = cv2.cvtColor(orig, cv2.COLOR_BGR2GRAY)
 
 watches = watch_cascade.detectMultiScale(gray, 20, 20)
 
